@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=SpriteSheet
+comment1.params=filename\ rows\ columns
+comment1.target=SpriteSheet(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=int\ getRows()
+comment3.params=
+comment3.target=int\ getColumns()
+comment4.params=row\ column
+comment4.target=greenfoot.GreenfootImage\ getSprite(int,\ int)
+comment5.params=row\ column
+comment5.target=java.awt.image.BufferedImage\ getSpriteImage(int,\ int)
+numComments=6

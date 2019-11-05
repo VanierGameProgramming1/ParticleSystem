@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=PlatformActor
+comment1.params=
+comment1.target=PlatformActor()
+comment2.params=position\ velocity\ acceleration
+comment2.target=PlatformActor(Point2D,\ Vector2D,\ Vector2D)
+comment3.params=
+comment3.target=void\ act()
+comment4.params=
+comment4.target=void\ landOnPlatform()
+numComments=5
