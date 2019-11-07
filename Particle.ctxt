@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Particle
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ Particle\ here.\r\n\ \r\n\ @author\ (your\ name)\ \r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
+comment1.params=source\ bgImage
+comment1.target=Particle(ParticleEmitter,\ greenfoot.GreenfootImage)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=minValue\ maxValue\ t
+comment3.target=double\ lerp(double,\ double,\ double)
+numComments=4

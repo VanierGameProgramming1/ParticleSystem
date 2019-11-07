@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=ParticleEmitter
+comment1.params=emissionRate\ lifetime\ angularVelocity\ initialSize\ finalSize\ initialOpacity\ finalOpacity\ bgImage
+comment1.target=ParticleEmitter(double,\ double,\ double,\ double,\ double,\ double,\ double,\ greenfoot.GreenfootImage)
+comment2.params=
+comment2.target=void\ act()
+comment3.params=
+comment3.target=double\ getLifeTime()
+comment4.params=
+comment4.target=double\ getAngularVelocity()
+comment5.params=t
+comment5.target=double\ getOpacity(double)
+comment6.params=t
+comment6.target=double\ getSize(double)
+comment7.params=minValue\ maxValue\ t
+comment7.target=double\ lerp(double,\ double,\ double)
+numComments=8
