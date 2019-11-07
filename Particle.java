@@ -9,15 +9,21 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class Particle extends SimulationActor
 {
     protected ParticleEmitter source;
-    protected double currentTime;
-    protected int currentAngle;
     protected GreenfootImage bgImage;
+    protected int initialImageSize;
+    protected double currentTime;
+    protected double currentAngle;
     
     public Particle(ParticleEmitter source, GreenfootImage bgImage)
     {
+        super();
         this.source = source;
         this.bgImage = bgImage;
+        
+        initialImageSize = (bgImage == null) ? 1 : bgImage.getWidth();
+        
         setImage(bgImage);
+        getImage().setTransparency(0);
         currentTime = 0.0;
         currentAngle = Greenfoot.getRandomNumber(360);
         setRotation((int) currentAngle);
@@ -34,21 +40,17 @@ public class Particle extends SimulationActor
         currentTime += dt;
         currentAngle += source.getAngularVelocity() * dt;
         setRotation((int) currentAngle);
-        
-        // Interpolate Values
+
+        // Interpolate transparency and size
         if (t < 1.0f)
         {
-           getImage().setTransparency((int)source.getOpacity(t));
+           double size = source.getSize(t);
+           scaleImage(size / initialImageSize);
+           getImage().setTransparency((int) source.getOpacity(t));
         }
-        
-        if (t >= 1.0)
+        else
         {
             getSimulationWorld().removeObject(this);
         }
     }    
-    
-    public double lerp(double minValue, double maxValue, double t)
-    {
-        return minValue + t * (maxValue - minValue);
-    }
 }

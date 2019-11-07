@@ -5,6 +5,4 @@ comment1.params=source\ bgImage
 comment1.target=Particle(ParticleEmitter,\ greenfoot.GreenfootImage)
 comment2.params=
 comment2.target=void\ act()
-comment3.params=minValue\ maxValue\ t
-comment3.target=double\ lerp(double,\ double,\ double)
-numComments=4
+numComments=3

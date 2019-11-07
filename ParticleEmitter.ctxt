@@ -1,7 +1,7 @@
 #BlueJ class context
 comment0.target=ParticleEmitter
-comment1.params=emissionRate\ lifetime\ angularVelocity\ initialSize\ finalSize\ initialOpacity\ finalOpacity\ bgImage
-comment1.target=ParticleEmitter(double,\ double,\ double,\ double,\ double,\ double,\ double,\ greenfoot.GreenfootImage)
+comment1.params=parent\ emissionRate\ lifetime\ initialVelocity\ initialVelocityVariation\ angularVelocity\ initialSize\ finalSize\ initialOpacity\ finalOpacity\ bgImage
+comment1.target=ParticleEmitter(SimulationActor,\ double,\ double,\ Vector2D,\ double,\ double,\ double,\ double,\ double,\ double,\ greenfoot.GreenfootImage)
 comment2.params=
 comment2.target=void\ act()
 comment3.params=

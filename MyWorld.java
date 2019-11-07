@@ -191,5 +191,7 @@ public class MyWorld extends SimulationWorld
         Skeleton skeleton = new Skeleton();
         addObject(skeleton,837,481);
         cannonBallAvatar.setLocation(732,543);
+        SmokeEmitter smokeEmitter = new SmokeEmitter(cannonBallAvatar);
+        addObject(smokeEmitter,805,570);
     }
 }
